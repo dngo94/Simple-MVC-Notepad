@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="490.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+            <TextArea fx:id="TEXT_AREA" layoutX="12.0" layoutY="151.0" onKeyPressed="#onKeyPressed" onKeyTyped="#onKeyTyped" prefHeight="325.0" prefWidth="732.0" wrapText="true">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></TextArea>
+         
+      <TextField fx:id="TEXT_FIELD" layoutX="575.0" layoutY="14.0" />
+      
+      <Button fx:id="LOAD_A" layoutX="14.0" layoutY="107.0" mnemonicParsing="false" onAction="#LoadTextA" text="Load A" />
+  
+      <Button fx:id="SAVE_A" layoutX="86.0" layoutY="107.0" mnemonicParsing="false" onAction="#SaveTextA" text="Save A" textAlignment="CENTER" />
+
+      <Button fx:id="LOAD_B" layoutX="14.0" layoutY="48.0" mnemonicParsing="false" onAction="#LoadTextB" text="Load B" />
+      
+      <Button fx:id="SAVE_B" layoutX="86.0" layoutY="48.0" mnemonicParsing="false" onAction="#SaveTextB" text="Save B" />
+      
+      <Button fx:id="CLEAR" layoutX="158.0" layoutY="48.0" mnemonicParsing="false" onAction="#ClearAll" text="Clear All" />
+     
+      <Button fx:id="CLEAR_H" layoutX="237.0" layoutY="48.0" mnemonicParsing="false" onAction="#ClearOnlyLetterH" prefHeight="27.0" prefWidth="146.0" text="Remove letter all &quot;h&quot;" textAlignment="CENTER" />
+ 
+      <Button fx:id="FIND_B" layoutX="575.0" layoutY="48.0" mnemonicParsing="false" onAction="#WordSearch" prefHeight="27.0" prefWidth="98.0" text="Search Word" />
+     
+      <Button fx:id="OTHER_SAVE" layoutX="460.0" layoutY="7.0" mnemonicParsing="false" onAction="#SaveNew" text="Save" />
+      
+      <RadioButton fx:id="RAD_B" layoutX="396.0" layoutY="53.0" mnemonicParsing="false" onAction="#Disable" text="Disable &quot;a&quot; input" />
+      
+   </children>
+</AnchorPane>
